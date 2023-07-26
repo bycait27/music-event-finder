@@ -1,3 +1,6 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
 :root {
     /* light theme */
 --light-bg: #F6F4EB;
@@ -5,21 +8,50 @@
 --light-header: #4682A9;
 
      /* dark theme */
---dark-bg: #1D267D;
+--dark-bg: #212A3E;
 --dark-btn: #D4ADFC;
 --dark-header: #0C134F;
 }
 
-body {
-background-color: var(--dark-bg);
+.media-scroller {
+    --spacer: 2rem;
+    display: grid;
+    gap: var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+
+    padding: 0 var(--spacer) var(--spacer);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
 }
 
-main {
-
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer);
+    padding: var(--spacer);
+    background: var(--cyan-12);
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-2);
+    color: white;
 }
 
+.media-element > img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
 
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--spacer);
+}
 
-button {
-    background-color: var(--light-btn)
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+.header {
+    background: var(--cyan-12);
 }
