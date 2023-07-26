@@ -1,0 +1,22 @@
+:root {
+    /* light theme */
+--light-bg: #F6F4EB;
+--light-btn: #91c8e4;
+--light-header: #4682A9;
+
+     /* dark theme */
+--dark-bg: #1D267D;
+--dark-btn: #D4ADFC;
+--dark-header: #0C134F;
+}
+body {
+
+}
+
+main {
+
+}
+
+button {
+    color: var(--light-btn)
+}
