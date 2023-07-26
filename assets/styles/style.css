@@ -9,14 +9,17 @@
 --dark-btn: #D4ADFC;
 --dark-header: #0C134F;
 }
-body {
 
+body {
+background-color: var(--dark-bg);
 }
 
 main {
 
 }
 
+
+
 button {
-    color: var(--light-btn)
+    background-color: var(--light-btn)
 }
