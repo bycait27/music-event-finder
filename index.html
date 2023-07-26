@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Music Finder</title>
+    
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    
+    <main id="">
+    <h1>Music Finder</h1>
+    <!-- dropdown selector to choose genre -->
+        <label for="dropdown">Select a genre!</label>
+            <select id="dropdown">
+            <option value="" selected disabled>Select an option</option>
+            <option value="option1">Pop</option>
+            <option value="option2">Rap</option>
+            <option value="option3">Country</option>
+            <option value="option4">Rock</option>
+            <option value="option5">EDM</option>
+            <option value="option6">Jazz</option>
+        </select>
+
+        <!-- results for groups in genre  -->
+        <div id="results">
+            <h2>Groups</h2>
+        </div>
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
