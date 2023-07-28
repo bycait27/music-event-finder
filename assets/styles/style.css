@@ -1,18 +1,28 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 
-:root {
-    /* light theme */
+/* :root {
+    light theme 
 --light-bg: #F6F4EB;
 --light-btn: #91c8e4;
---light-header: #4682A9;
+--light-header: #4682A9; */
 
      /* dark theme */
---dark-bg: #212A3E;
---dark-btn: #D4ADFC;
---dark-header: #0C134F;
-}
+/* --dark-bg: #212A3E;
+--dark-btn: #D4ADFC; */
+/* --dark-header: #0C134F; */
+/* } */
 
+html {
+    --text-1: var(--gray-9);
+    --text-2: var(--gray-7);
+  
+    @media (--OSdark) {
+      --text-1: var(--gray-1);
+      --text-2: var(--gray-2);
+    }
+  }
+  
 .media-scroller {
     --spacer: 2rem;
     display: grid;
