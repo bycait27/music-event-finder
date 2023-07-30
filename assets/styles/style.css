@@ -1,6 +1,16 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 
+/* will ask Tom or Matt about why this isn't working or what alternative way we 
+make it work */
+
+/* tailwind css -> supposed to move the dot from left to right when clicking toggle */
+/* might have to just use js */
+@tailwind base; 
+#toggle:checked ~ label div.toggle-dot {
+    @apply translate-x-3;
+}
+
 .media-scroller {
     --spacer: 2rem;
     display: grid;
@@ -44,7 +54,11 @@
     background: var(--cyan-12);
 }
 
-.lightModeBtn {
+#light-dark {
+    display: contents;
+}
+
+/* .lightModeBtn {
     
 
 
@@ -52,4 +66,4 @@
 
 .darkModeBtn {
 
-}
+} */
