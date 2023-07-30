@@ -54,7 +54,11 @@ make it work */
     background: var(--cyan-12);
 }
 
-.lightModeBtn {
+#light-dark {
+    display: contents;
+}
+
+/* .lightModeBtn {
     
 
 
@@ -62,4 +66,4 @@ make it work */
 
 .darkModeBtn {
 
-}
+} */
