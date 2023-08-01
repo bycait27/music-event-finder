@@ -1,21 +1,26 @@
 const lightMode = document.getElementById('lightModeBtn');
 const darkMode = document.getElementById('darkModeBtn');
 
+// selector
 const toggleDot = document.getElementById("toggle-dot");
-
-function themeToggle() {
-    if (toggleDot.checked) {
-        document.classList.add("dark");
-        localStorage.setItem("theme","dark");
-        toggleDot.classList.toggle("translate-x-3");
+// checking if theme is already set to darkmode
+let isDarkMode = localStorage.getItem("theme") === "dark-mode";
+// function to change theme from light to dark/vice versa
+function toggleTheme() {
+    if (isDarkMode) {
+        document.documentElement.classList.remove("dark-mode");
+        localStorage.removeItem("theme");
+        toggleDot.classList.remove("translate-x-3");
     } else {
-        document.classList.remove("dark");
-        localStorage.removeItem("theme") ;
-        toggleDot.classList.toggle("translate-x-3");
+        document.documentElement.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark-mode");
+        toggleDot.classList.add("translate-x-3");
     }
+    // updates theme color
+    isDarkMode = !isDarkMode; 
 }
 
-toggleDot.addEventListener("click", themeToggle)
+toggleDot.addEventListener("click", toggleTheme);
 
 
 

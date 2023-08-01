@@ -1,5 +1,16 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
+/* on first page load, should start on light */
+body {
+    background-color: lightcoral;
+    color: black;
+}
+
+
+.dark-mode {
+    background-color: darkred;
+    color: lightblue;
+}
 
 .media-scroller {
     --spacer: 2rem;
@@ -52,12 +63,3 @@
     display: contents;
 }
 
-/* .lightModeBtn {
-    
-
-
-}
-
-.darkModeBtn {
-
-} */
