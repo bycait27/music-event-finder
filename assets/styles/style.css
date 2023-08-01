@@ -54,6 +54,10 @@ make it work */
     background: var(--cyan-12);
 }
 
+#albums {
+    color: white;
+}
+
 #light-dark {
     display: contents;
 }
