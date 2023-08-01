@@ -5,11 +5,11 @@ const toggleDot = document.getElementById("toggle-dot");
 
 function themeToggle() {
     if (toggleDot.checked) {
-        document.classList.add("dark");
-        localStorage.setItem("theme","dark");
+        document.documentElement.classList.add("dark-mode");
+        localStorage.setItem("theme","dark-mode");
         toggleDot.classList.toggle("translate-x-3");
     } else {
-        document.classList.remove("dark");
+        document.documentElement.classList.remove("dark-mode");
         localStorage.removeItem("theme") ;
         toggleDot.classList.toggle("translate-x-3");
     }
