@@ -1,6 +1,23 @@
 const lightMode = document.getElementById('lightModeBtn');
 const darkMode = document.getElementById('darkModeBtn');
 
+const toggleDot = document.getElementById("toggle-dot");
+
+function themeToggle() {
+    if (toggleDot.checked) {
+        document.classList.add("dark");
+        localStorage.setItem("theme","dark");
+        toggleDot.classList.toggle("translate-x-3");
+    } else {
+        document.classList.remove("dark");
+        localStorage.removeItem("theme") ;
+        toggleDot.classList.toggle("translate-x-3");
+    }
+}
+
+toggleDot.addEventListener("click", themeToggle)
+
+
 
 // Gather value for inputs
 // event listener    
