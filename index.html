@@ -42,7 +42,7 @@
 
     <main class="p-6">
         
-        <!-- dropdown selector to choose genre -->
+        <!-- Selector to choose artist/band-name -->
         <label class="block text-white font-bold mb-2">Enter Artist/Band Name</label>
         <input type="text" class="text-white font-bold" id="artist-search">
     
@@ -50,6 +50,16 @@
         <button class="px-4 py-2 text-white bg-blue-500 rounded shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300" id="search-btn">
             Search
         </button>
+
+        <!-- Selector to choose # of genres to display -->
+        <label class="block text-white font-bold mb-2">Enter # of Genres to Display</label>
+        <input type="text" class="text-white font-bold" id="genre-number-input">
+
+        <!--  'Select' button once # of genres are selected -->
+        <button class="px-4 py-2 text-white bg-blue-500 rounded shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300" id="genre-number-btn">
+            Search
+        </button>
+        
 
     </main>
     
@@ -87,11 +97,16 @@
     </div>
    </div>
 
-   <!-- AudioDB Fetch Test UI -->
-   <div id="albums">
+   <!-- AudioDB Fetch Div For Data -->
+   
+     <div id="albums">
       
-   </div>
+     </div>
 
+     <div id="genres">
+        
+     </div>
+   
 
 
     <script src="./assets/js/script.js"></script>
