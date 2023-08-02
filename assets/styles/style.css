@@ -61,12 +61,13 @@ main label {
 }
 
 body header {
-    background-color: #fefce8;
+    background-color: #ffedd5;
 }
 
 #artist-search {
     color: var(--text-color);
     background-color: var(--search-bar-color);
+
 }
 
 #genre-number-input {
@@ -74,14 +75,35 @@ body header {
     background-color: var(--search-bar-color);
 }
 
+#genre-number-btn, #search-btn {
+    transform: translate(-150px, 0);
+}
+
 #genres {
-    border: 1px solid red;
     color: var(--text-color);
 }
 
 #albums {
     color: var(--text-color);
-    border: 1px solid orange;
+    
+}
+
+.results {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    
+
+}
+
+.search-bars {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+h1 {
+    color: #57534e;
 }
 
 

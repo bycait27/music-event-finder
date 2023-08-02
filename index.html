@@ -33,29 +33,9 @@
     </header>
 
     <main class="p-6">
-        
-        <!-- Selector to choose artist/band-name -->
-        <label class="block font-bold mb-2">Enter Artist/Band Name</label>
-        <input type="text" class="font-bold" id="artist-search">
-    
-        <!-- 'Select' button once genre is selected-->
-        <button class="px-4 py-2 text-white bg-blue-500 rounded shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300" id="search-btn">
-            Search
-        </button>
 
-        <!-- Selector to choose # of genres to display -->
-        <label class="block font-bold mb-2">Enter # of Genres to Display</label>
-        <input type="text" class="font-bold" id="genre-number-input">
 
-        <!--  'Select' button once # of genres are selected -->
-        <button class="px-4 py-2 text-white bg-blue-500 rounded shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300" id="genre-number-btn">
-            Search
-        </button>
-        
-
-    </main>
-    
-    <!-- Start of carousel work -->
+        <!-- Start of carousel work -->
    <div class="media-scroller snaps-inline">
    
     <div class="media-element">
@@ -88,17 +68,42 @@
         <p class="title">J Cole</p>
     </div>
    </div>
+        
+        <!-- Selector to choose artist/band-name -->
+      <div class="search-bars">
+        <label class="block font-bold mb-2"></label>
+        <input type="text" class="font-bold" id="artist-search" placeholder="Artist/Band Name">
+    
+        <!-- 'Select' button once genre is selected-->
+        <button class="px-4 py-2 text-white bg-blue-500 rounded shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300" id="search-btn">
+            Search
+        </button>
 
-   <!-- AudioDB Fetch Div For Data -->
+        <!-- Selector to choose # of genres to display -->
+        <label class="block font-bold mb-2"></label>
+        <input type="text" class="font-bold" id="genre-number-input" placeholder="Number of Genres">
+
+        <!--  'Select' button once # of genres are selected -->
+        <button class="px-4 py-2 text-white bg-blue-500 rounded shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300 " id="genre-number-btn">
+            Search
+        </button>
+       </div>
+    </main>
+    
+    
    
-     <div id="albums">
+   <!-- AudioDB Fetch Div For Data -->
+   <div class="results media-scroller">
+     <div id="albums" class="media-element">
       
      </div>
 
-     <div id="genres">
+     <div id="genres" class="media-element">
         
      </div>
-   
+   </div>
+
+
 
 
     <script src="./assets/js/script.js"></script>
