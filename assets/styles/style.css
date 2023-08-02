@@ -1,12 +1,17 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
+
+:root {
+    --text-color: #fef3c7;
+    --search-bar-color: #c7d2fe;
+}
 /* on first page load, should start on light */
 body {
-    background-color: lightcoral;
+    background-color: #e0e7ff;
 }
 
 .dark-mode {
-    background-color: darkblue;
+    background-color: #818cf8;
 }
 
 #light-dark {
@@ -30,10 +35,10 @@ body {
     grid-template-rows: min-content;
     gap: var(--spacer);
     padding: var(--spacer);
-    background: var(--cyan-12);
+    background: #c7d2fe;
     border-radius: var(--radius-2);
     box-shadow: var(--shadow-2);
-    color: white;
+    color: var(--text-color);
 }
 
 .media-element > img {
@@ -51,21 +56,27 @@ body {
     scroll-snap-align: start;
 }
 
-.header {
-    background: var(--cyan-12);
+body header {
+    background-color: #fefce8;
+}
+
+#artist-search {
+    color: var(--text-color);
+    background-color: var(--search-bar-color);
 }
 
 #genre-number-input {
-    color: white;
+    color: var(--text-color);
+    background-color: var(--search-bar-color);
 }
 
 #genres {
     border: 1px solid red;
-    color: white;
+    color: var(--text-color);
 }
 
 #albums {
-    color: white;
+    color: var(--text-color);
     border: 1px solid orange;
 }
 
