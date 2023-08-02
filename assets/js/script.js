@@ -1,18 +1,16 @@
-const lightMode = document.getElementById('lightModeBtn');
-const darkMode = document.getElementById('darkModeBtn');
-
 // selector
 const toggleDot = document.getElementById("toggle-dot");
 // checking if theme is already set to darkmode
 let isDarkMode = localStorage.getItem("theme") === "dark-mode";
 // function to change theme from light to dark/vice versa
 function toggleTheme() {
+    console.log(isDarkMode)
     if (isDarkMode) {
-        document.documentElement.classList.remove("dark-mode");
+        document.body.classList.remove("dark-mode");
         localStorage.removeItem("theme");
         toggleDot.classList.remove("translate-x-3");
     } else {
-        document.documentElement.classList.add("dark-mode");
+        document.body.classList.add("dark-mode");
         localStorage.setItem("theme", "dark-mode");
         toggleDot.classList.add("translate-x-3");
     }
@@ -21,8 +19,6 @@ function toggleTheme() {
 }
 
 toggleDot.addEventListener("click", toggleTheme);
-
-
 
 // Finding ID's from html and linking to javascript.
 const artistSearch = document.getElementById('artist-search');
