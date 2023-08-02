@@ -12,12 +12,12 @@
     
     <header class="bg-white dark:bg-cyan-950 p-8 flex justify-between items-center" class="header">
          <!-- Music Finder Header -->
-        <h1 class="text-x1 font-bold text-gray-800 dark:text-white">Music Event Finder</h1>
+        <h1 class="text-x1 font-bold text-gray-800 dark:text-white">Music Explorer</h1>
 
         <!-- light and dark mode toggle button -->
         <div id="light-dark" class="flex flex-col space-y-12 m-auto max-w-5xl mt-12">
             <div class="flex justify-end items-center space-x-2">
-                <span class="text-sm text-gray-800">Light</span>
+                <span class="text-sm text-gray-800">L</span>
                 <div>
                     <input type="checkbox" id="toggle" class="hidden"/>
                     <label for="toggle">
@@ -26,25 +26,17 @@
                     </div>
                     </label>
                 </div>
-                <span class="text-sm text-gray-800">Dark</span>
+                <span class="text-sm text-gray-800">D</span>
             </div>
         </div>
-        
-        
-        <!-- Light and dark mode buttons positioned on the right side -->
-
-        <!-- <div> -->
-            <!-- <button id="lightModeBtn" class="px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700 rounded">Light</button> -->
-            <!-- <button id="darkModeBtn" class="px-4 py-2 text-white bg-blue-900 hover:bg-blue-800 dark:bg-gray-600 dark:hover:bg-gray-700 rounded">Dark</button> -->
-          <!-- </div> -->
         
     </header>
 
     <main class="p-6">
         
         <!-- Selector to choose artist/band-name -->
-        <label class="block text-white font-bold mb-2">Enter Artist/Band Name</label>
-        <input type="text" class="text-white font-bold" id="artist-search">
+        <label class="blockfont-bold mb-2">Enter Artist/Band Name</label>
+        <input type="text" class="font-bold" id="artist-search">
     
         <!-- 'Select' button once genre is selected-->
         <button class="px-4 py-2 text-white bg-blue-500 rounded shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300" id="search-btn">
@@ -52,8 +44,8 @@
         </button>
 
         <!-- Selector to choose # of genres to display -->
-        <label class="block text-white font-bold mb-2">Enter # of Genres to Display</label>
-        <input type="text" class="text-white font-bold" id="genre-number-input">
+        <label class="block font-bold mb-2">Enter # of Genres to Display</label>
+        <input type="text" class="font-bold" id="genre-number-input">
 
         <!--  'Select' button once # of genres are selected -->
         <button class="px-4 py-2 text-white bg-blue-500 rounded shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300" id="genre-number-btn">
