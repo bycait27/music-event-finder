@@ -18,6 +18,11 @@ body {
     display: contents;
 }
 
+.sun, .moon {
+    width: 20px;
+    height: auto;
+}
+
 main label {
     color: var(--text-color)
 }
