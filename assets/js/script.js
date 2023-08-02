@@ -85,9 +85,10 @@ function fetchGenre() {
 genreNumberBtn.addEventListener("click", fetchGenre);
 
 // Function to assist with keydown function, so only when the user clicks 'enter', the results will become visible. Not working yet.
-function pressEnter2(genreData) {
+function submitGenre(genreData) {
     if (genreData.key === "Enter") {
         fetchGenre();
     }
 }
 
+genreNumberInput.addEventListener("keydown", submitGenre);
