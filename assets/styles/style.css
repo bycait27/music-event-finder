@@ -17,6 +17,10 @@ body {
 #light-dark {
     display: contents;
 }
+
+main label {
+    color: var(--text-color)
+}
 .media-scroller {
     --spacer: 2rem;
     display: grid;
