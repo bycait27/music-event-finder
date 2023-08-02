@@ -3,15 +3,15 @@
 /* on first page load, should start on light */
 body {
     background-color: lightcoral;
-    color: black;
 }
-
 
 .dark-mode {
-    background-color: darkred;
-    color: lightblue;
+    background-color: darkblue;
 }
 
+#light-dark {
+    display: contents;
+}
 .media-scroller {
     --spacer: 2rem;
     display: grid;
@@ -69,7 +69,5 @@ body {
     border: 1px solid orange;
 }
 
-#light-dark {
-    display: contents;
-}
+
 
