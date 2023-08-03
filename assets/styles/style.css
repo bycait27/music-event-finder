@@ -7,7 +7,7 @@
 }
 /* on first page load, should start on light */
 body {
-    background-color: #fee2e2;
+    background-color: rgb(180, 209, 219);
 }
 
 .dark-mode {
