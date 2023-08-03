@@ -16,6 +16,13 @@ function toggleTheme() {
     }
     // updates theme color
     isDarkMode = !isDarkMode; 
+
+    // saves darkmode if set, otherwise will default to lightmode
+    const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark-mode") {
+    document.body.classList.add("dark-mode");
+    toggleDot.classList.add("translate-x-3");
+}
 }
 
 toggleDot.addEventListener("click", toggleTheme);
