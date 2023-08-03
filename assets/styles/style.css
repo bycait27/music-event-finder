@@ -2,20 +2,25 @@
 @import "https://unpkg.com/open-props/normalize.min.css";
 
 :root {
-    --text-color: #fef3c7;
+    --text-color: #818cf8;
     --search-bar-color: #c7d2fe;
 }
 /* on first page load, should start on light */
 body {
-    background-color: #e0e7ff;
+    background-color: #fee2e2;
 }
 
 .dark-mode {
-    background-color: #818cf8;
+    background-color: #27272a;
 }
 
 #light-dark {
     display: contents;
+}
+
+.sun, .moon {
+    width: 20px;
+    height: auto;
 }
 
 main label {
