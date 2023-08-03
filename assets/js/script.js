@@ -33,6 +33,13 @@ const searchBtn = document.getElementById('search-btn');
 
 // This function fetches api data upon a user search entry, and then appends children to a div to display all albums for that artist/band.
 function fetchData() {
+    // Retrieves existing names from local storage.
+    const savedArtistNames = JSON.parse(localStorage.getItem('artistNames')) || [];
+    // Adds the current artist/band name to the array
+    savedArtistNames.push(artistSearch.value);
+    // Stores the updated array back in local storage
+    localStorage.setItem('artistNames', JSON.stringify(savedArtistNames));
+    
     fetch(`https://theaudiodb.com/api/v1/json/2/discography.php?s=${artistSearch.value}`)
     .then(function(response) {
         return response.json()
@@ -95,3 +102,4 @@ function submitGenre(genreData) {
 }
 
 genreNumberInput.addEventListener("keydown", submitGenre);
+
